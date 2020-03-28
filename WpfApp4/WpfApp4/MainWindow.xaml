@@ -1,0 +1,182 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Ap" Height="500" Width="700" ResizeMode="CanMinimize" Icon="C:\Users\mager\Downloads\icons8-the-dragon-team-512.ico">
+    <Grid  x:Name="background" Background="#FF5D20B6">
+        <TabControl >
+            <TabItem x:Name="Home_Tab" Background="#FF5D20B6" Margin="302,-2,-304,0" BorderThickness="0" BorderBrush="#FF5D20B6" >
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal" Grid.Column="2">
+                        <Image x:Name="Home_image" Source="C:\Users\mager\Downloads\PinClipart.com_house-clipart-png_8338 (1).png" Height="21" Width="33" Cursor="Hand"/>
+                        <TextBlock x:Name="Home_text" Text="Home" Margin="0 3 0 0" Cursor="Hand"/>
+                    </StackPanel>
+                </TabItem.Header>
+                <Grid x:Name="Grid1_of_Button" Margin="-3 -3 529 -2" Background="#FF5D20B6" >
+                    <StackPanel Orientation="Vertical">
+                        <Ellipse  x:Name="circle_home_tab" StrokeThickness="0" Height="100" Width="100" VerticalAlignment="Top">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="C:\Users\mager\Downloads\5e7a0611c6122.png"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <TextBlock Text="Wellcome To" Foreground="White" HorizontalAlignment="Center" FontFamily="Monotype Corsiva" FontSize="19"/>
+                        <TextBlock Text=" AP Project" Foreground="White" HorizontalAlignment="Center" FontFamily="Monotype Corsiva" FontSize="30 "/>
+                        <Button x:Name="New_Button" Margin="30 60 0 0" Background="#FF5D20B6" BorderThickness="0" BorderBrush="#FF5D20B6"  FontFamily="Mongolian Baiti" FontSize="15" Cursor="Hand" Click="New_Button_Click" >
+                            <Button.Content>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="C:\Users\mager\Downloads\PinClipart.com_documents-clip-art_1085461.png" Width="22" Height="30" Margin="4 0 30 0"/>
+                                    <TextBlock Text="New"  Margin="6 7 0 0" Foreground="White"/>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
+                        <Button x:Name="Save_Button" Margin="30 20 0 0" Background="#FF5D20B6" BorderThickness="0" BorderBrush="#FF5D20B6" Foreground="White" FontFamily="Mongolian Baiti" FontSize="15" Cursor="Hand" Click="Save_Button_Click">
+                            <Button.Content>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="C:\Users\mager\Downloads\PinClipart.com_clipart-converter_413962.png" Width="22" Height="30" Margin="0 0 30 0"/>
+                                    <TextBlock Text="Save"  Margin="6 7 0 0"/>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
+                        <Button x:Name="Load_Button" Margin="30 20 0 0" Background="#FF5D20B6" BorderThickness="0" BorderBrush="#FF5D20B6" Foreground="White" FontFamily="Mongolian Baiti" FontSize="15" Cursor="Hand" Click="Load_Button_Click">
+                            <Button.Content>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image x:Name="Load_image" Source="C:\Users\mager\Downloads\PinClipart.com_folder-clipart-black-and_530280 (1).png" Width="22" Height="30" Margin="0 0 30 0"/>
+                                    <TextBlock  x:Name="Load_Text" Text="Load"  Margin="6 7 0 0"/>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
+                        <Button x:Name="R_Button" Margin="-10 20 0 0" Background="#FF5D20B6" BorderThickness="0" BorderBrush="#FF5D20B6" Foreground="White" FontFamily="Mongolian Baiti" FontSize="15" Cursor="Hand" Click="Load_Button_Click">
+                            <Button.Content>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image x:Name="R_image" Source="C:\Users\mager\Downloads\PinClipart.com_decorative-line-clipart_411412.png" Width="22" Height="30" Margin="0 0 30 0"/>
+                                    <TextBlock  x:Name="R_Text" Text="R"  Margin="7 7 -20 0" Width="11"/>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
+                    </StackPanel>
+                    <Grid Margin="150,0,-531,0" >
+                        <Grid.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFFBFEFF" Offset="0.767"/>
+                                <GradientStop Color="#FFC4F4FF" Offset="0.983"/>
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="C:\Users\mager\Downloads\PinClipart.com_popcorn-pieces-clipart-black_641410.png" Width="33" Height="33" Margin=" 10 -390 0 0"/>
+                            <TextBlock Text="Please Select The Following Items Based on your Information." Margin="0 16" FontWeight="Bold"/>
+                        </StackPanel>
+                        <Grid Margin="0 32 0 230">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Orientation="Vertical" Grid.Column="0">
+                                <CheckBox x:Name="check_box1" Content="check Box1"  Margin="10 20 0 10" Background="Aquamarine" BorderBrush="White" Cursor="Pen"/>
+                                <CheckBox x:Name="check_box2" Content="check Box2"  Margin="10 0" Background="Aquamarine" BorderBrush="White" Cursor="Pen"/>
+                                <CheckBox x:Name="check_box3" Content="check Box3"  Margin="10 10" Background="Aquamarine" BorderBrush="White" Cursor="Pen"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Grid.Column="1">
+                                <CheckBox x:Name="check_box4" Content="check Box4"  Margin="10 20 0 10" Background="Aquamarine" BorderBrush="White" Cursor="Pen"/>
+                                <CheckBox x:Name="check_box5" Content="check Box5"  Margin="10 0" Background="Aquamarine" BorderBrush="White" Cursor="Pen" />
+                                <CheckBox x:Name="check_box6" Content="check Box6"  Margin="10 10" Background="Aquamarine" BorderBrush="White" Cursor="Pen"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Grid.Column="2">
+                                <ComboBox x:Name="combo_box1"  BorderThickness="0" Margin="0 20 10 0" ScrollViewer.VerticalScrollBarVisibility="Visible" SelectedIndex="0" MaxDropDownHeight="50" Cursor="Hand">
+                                    <ComboBoxItem x:Name="None_select" Content="None"/>
+                                    <ComboBoxItem x:Name="select_1" Content="select_1" Cursor="Hand" />
+                                    <ComboBoxItem x:Name="select_2" Content="select_2" Cursor="Hand"/>
+                                    <ComboBoxItem x:Name="select_3" Content="select_3" Cursor="Hand"/>
+                                    <ComboBoxItem x:Name="select_4" Content="select_4" Cursor="Hand"/>
+                                    <ComboBoxItem x:Name="select_5" Content="select_5" Cursor="Hand"/>
+                                    <ComboBoxItem x:Name="select_6" Content="select_6" Cursor="Hand"/>
+                                    <ComboBoxItem x:Name="select_7" Content="select_7" Cursor="Hand"/>
+                                    <ComboBoxItem x:Name="select_8" Content="select_8" Cursor="Hand"/>
+                                    <ComboBoxItem x:Name="select_9" Content="select_9" Cursor="Hand"/>
+                                    <ComboBoxItem x:Name="select_10" Content="select_10" Cursor="Hand"/>
+                                </ComboBox>
+                                <Button x:Name="Reset_Button" Margin="97,60,11,0" BorderThickness="0" Height="28" Cursor="Hand" Click="Reset_Button_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="C:\Users\mager\Downloads\PinClipart.com_eraser-clipart_334950.png" Width="31" Height="22"/>
+                                        <TextBlock Text="Rest" Margin="0 3 0 0"/>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                        </Grid >
+                        <Grid Margin="0 180 0 0">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="C:\Users\mager\Downloads\PinClipart.com_ocuk-clipart_417102.png" Width="33" Height="22" Margin="10 -200 0 0"/>
+                                <TextBlock Text=" please Write your Text." Margin="0 22 0 0 " FontWeight="Bold"/>
+                                <TextBox Background="Aquamarine" Width="321" Margin="0,56,0,116" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" MaxLines="4" SpellCheck.IsEnabled="True" Cursor="Pen" AcceptsReturn="True" />
+                                <Button  x:Name="Field_Button2"  Width="60" Margin="-30,190,0,36" BorderThickness="0" Cursor="Hand" Hyperlink.Click="Field_Button2_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image x:Name="Field_Button2_image" Source="C:\Users\mager\Downloads\PinClipart.com_paperwork-clipart_3279425.png" Width="23" Height="31"  />
+                                        <TextBlock Text="Next" Margin="4 3 0 0"/>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Field_tab" Margin="388,-2,-392,0" BorderThickness="0" BorderBrush="#FF5D20B6" Background="#FF5D20B6">
+
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image x:Name="Field_image" Source="C:\Users\mager\Downloads\PinClipart.com_paperwork-clipart_3279425.png" Height="22" Width="30" Cursor="Hand"/>
+                        <TextBlock x:Name="Field_text" Text="Fields" Margin="0 4 0 0" Cursor="Hand" />
+                    </StackPanel>
+                </TabItem.Header>
+                <Grid Margin="2,0,0,0" >
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFBFEFF" Offset="0.767"/>
+                            <GradientStop Color="#FFC4F4FF" Offset="0.983"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Grid Margin="50,50,65,69" >
+                        <Border BorderBrush="#FF2038A2" BorderThickness="11" HorizontalAlignment="Left" Height="308" VerticalAlignment="Top" Width="558" RenderTransformOrigin="0.5,0.5" >
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image x:Name="Field_image_tab2" Source="C:\Users\mager\Downloads\PinClipart.com_paperwork-clipart_3279425.png" Height="22" Width="30" Margin="10 10"/>
+                                    <TextBlock x:Name="Field_text_tab2" Text=" Fill in the fields below. " Margin="0 13 0 0"  />
+                                </StackPanel>
+                                <Grid Margin="6,0,334,1" Height="192">
+
+                                    <StackPanel Orientation="Vertical">
+                                        <Image x:Name="picture_external" Source="C:\Users\mager\Downloads\iconfinder_icon-image_211677.png" Stretch="Fill" Height="114" Margin="28,20,28,0" />
+                                        <Button x:Name="image"  Content="image" Click="Load_image_Click" Margin="52,25,52,0" Height="28" BorderThickness="0" Cursor="Hand" />
+                                    </StackPanel>
+                                    <Border BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="185" Margin="6,0,0,0" />
+                                </Grid>
+                                <Grid Margin="250 -190 10 -30" Height="227">
+                                    <StackPanel Orientation="Vertical">
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="Name:" FontWeight="Bold"/>
+                                            <TextBox Width="150" Margin="8 0 0 0" Background="#FFECE4E4" BorderThickness="0" Cursor="Pen"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0 10">
+                                            <TextBlock Text="Family:" FontWeight="Bold"/>
+                                            <TextBox Width="150" Margin="5 0 0 0"  Background="#FFECE4E4"  BorderThickness="0" Cursor="Pen"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="Age:" FontWeight="Bold"/>
+                                            <TextBox Width="30" Margin="17 0 0 0"  Background="#FFECE4E4"  BorderThickness="0" Cursor="Pen"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0 10">
+                                            <TextBlock Text="Equations:" FontWeight="Bold" />
+                                            <TextBox Width="150" Margin="5 0 0 0" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" MaxLines="2" BorderThickness="0" Background="#FFECE4E4" Cursor="Pen" AcceptsReturn="True" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
