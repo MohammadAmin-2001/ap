@@ -170,6 +170,7 @@
                                             <TextBlock Text="Equations:" FontWeight="Bold" />
                                             <TextBox Width="150" Margin="5 0 0 0" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" MaxLines="2" BorderThickness="0" Background="#FFECE4E4" Cursor="Pen" AcceptsReturn="True" />
                                         </StackPanel>
+                                        <Button Name="Entrnal_pic_button" Content="image" BorderThickness="0" Width="50" Margin="10 40" Click="Entrnal_pic_button_Click"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>

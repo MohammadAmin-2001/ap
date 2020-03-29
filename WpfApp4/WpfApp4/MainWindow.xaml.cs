@@ -69,5 +69,16 @@ namespace WpfApp4
             }
 
         }
+
+        private void Entrnal_pic_button_Click(object sender, RoutedEventArgs e)
+        {
+            Pic_Enternal pic1 =  new Pic_Enternal();
+            BitmapImage image = new BitmapImage();
+            image.BeginInit();
+            image.UriSource = new Uri(@"C:\Users\mager\Downloads\FAVPNG_joker-batman-harley-quinn-t-shirt-art_cvvHuMHF.png");
+            image.EndInit();
+            pic1.image1.Source = image;
+            pic1.Show();
+        }
     }
 }
